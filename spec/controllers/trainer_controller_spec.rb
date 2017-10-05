@@ -15,8 +15,8 @@ describe Dashboard::TrainerController do
         card = create(:card, user: @user, block: @block,
                       interval: 1, repeat: 1, efactor: 2.5, quality: 5)
         card = check_review_card(card, 'house', 1)
-        expect(card.review_date.strftime('%Y-%m-%d %H:%M')).
-            to eq((Time.zone.now + 1.days).strftime('%Y-%m-%d %H:%M'))
+        expect(card.review_date.strftime('%Y-%m-%d %H:%M'))
+          .to eq((Time.zone.now + 1.days).strftime('%Y-%m-%d %H:%M'))
         expect(card.interval).to eq(6)
         expect(card.repeat).to eq(2)
         expect(card.attempt).to eq(1)
@@ -157,8 +157,8 @@ describe Dashboard::TrainerController do
         card = check_review_card(card, 'house', 1)
         card.update(review_date: Time.zone.now)
         card = check_review_card(card, 'house', 1)
-        expect(card.review_date.strftime('%Y-%m-%d %H:%M')).
-            to eq((Time.zone.now + 16.days).strftime('%Y-%m-%d %H:%M'))
+        expect(card.review_date.strftime('%Y-%m-%d %H:%M'))
+          .to eq((Time.zone.now + 16.days).strftime('%Y-%m-%d %H:%M'))
         expect(card.interval).to eq(45)
         expect(card.repeat).to eq(4)
         expect(card.attempt).to eq(1)
@@ -224,8 +224,8 @@ describe Dashboard::TrainerController do
         card.update(review_date: Time.zone.now)
         card = check_review_card(card, 'RoR', 1)
         card = check_review_card(card, 'house', 1)
-        expect(card.review_date.strftime('%Y-%m-%d %H:%M')).
-            to eq((Time.zone.now + 1.days).strftime('%Y-%m-%d %H:%M'))
+        expect(card.review_date.strftime('%Y-%m-%d %H:%M'))
+          .to eq((Time.zone.now + 1.days).strftime('%Y-%m-%d %H:%M'))
         expect(card.interval).to eq(6)
         expect(card.repeat).to eq(2)
         expect(card.attempt).to eq(1)
@@ -242,8 +242,8 @@ describe Dashboard::TrainerController do
         card = check_review_card(card, 'house', 1)
         card.update(review_date: Time.zone.now)
         card = check_review_card(card, 'house', 1)
-        expect(card.review_date.strftime('%Y-%m-%d %H:%M')).
-            to eq((Time.zone.now + 6.days).strftime('%Y-%m-%d %H:%M'))
+        expect(card.review_date.strftime('%Y-%m-%d %H:%M'))
+          .to eq((Time.zone.now + 6.days).strftime('%Y-%m-%d %H:%M'))
         expect(card.interval).to eq(14)
         expect(card.repeat).to eq(3)
         expect(card.attempt).to eq(1)
@@ -256,8 +256,8 @@ describe Dashboard::TrainerController do
                       interval: 16, repeat: 3, efactor: 2.7, quality: 5)
         card = check_review_card(card, 'RoR', 3)
         card = check_review_card(card, 'house', 1)
-        expect(card.review_date.strftime('%Y-%m-%d %H:%M')).
-            to eq((Time.zone.now + 1.days).strftime('%Y-%m-%d %H:%M'))
+        expect(card.review_date.strftime('%Y-%m-%d %H:%M'))
+          .to eq((Time.zone.now + 1.days).strftime('%Y-%m-%d %H:%M'))
         expect(card.interval).to eq(6)
         expect(card.repeat).to eq(2)
         expect(card.attempt).to eq(1)
