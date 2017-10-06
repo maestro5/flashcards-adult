@@ -1,0 +1,8 @@
+language: ruby
+rvm:
+  - 2.3.4
+os: linux
+
+before_script:
+  - cp config/database.yml.travis config/database.yml
+  - psql -c 'create database delta_test' -U postgres
