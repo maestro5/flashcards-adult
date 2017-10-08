@@ -1,4 +1,9 @@
-engines:
-  rubocop:
-    enabled: true
-    config: '.rubocop.yml'
+ratings:
+  paths:
+  - app/**
+  - lib/**
+  - "**.rb"
+exclude_paths:
+- Gemfile.lock
+- app/assets/stylesheets/bootstrap.css
+- "**/vendor/**/*"
