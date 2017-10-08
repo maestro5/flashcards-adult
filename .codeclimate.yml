@@ -1,4 +1,4 @@
 engines:
   rubocop:
     enabled: true
-    config: '.travis.yml'
+    config: '.rubocop.yml'
