@@ -10,7 +10,6 @@
 /node_modules
 /yarn-error.log
 config/database.yml
-config/secrets.yml
 public/uploads
 
 .byebug_history

@@ -7,8 +7,12 @@ module TrainerHelper
 
   def check_review_card(card, translate, number)
     number.times {
-      put :review_card, { card_id: card.id, user_translation: translate }
+      put :review_card, params: { card_id: card.id, user_translation: translate }
     }
-    Card.find(card.id)
+    card.reload
+  end
+
+  def check_card_attributes(card, options = {})
+    options.each_key { |option| expect(card.send option).to eq(options[option]) }
   end
 end

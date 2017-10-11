@@ -45,8 +45,8 @@ describe 'review cards with one block' do
     it 'incorrect translation' do
       fill_in 'user_translation', with: 'RoR'
       click_button 'Проверить'
-      expect(page).
-          to have_content 'Вы ввели не верный перевод. Повторите попытку.'
+      expect(page)
+        .to have_content 'Вы ввели не верный перевод. Повторите попытку.'
     end
 
     it 'correct translation' do
@@ -64,8 +64,8 @@ describe 'review cards with one block' do
     it 'incorrect translation distance=2' do
       fill_in 'user_translation', with: 'hou'
       click_button 'Проверить'
-      expect(page).
-          to have_content 'Вы ввели не верный перевод. Повторите попытку.'
+      expect(page)
+        .to have_content 'Вы ввели не верный перевод. Повторите попытку.'
     end
   end
 
@@ -81,8 +81,8 @@ describe 'review cards with one block' do
     it 'incorrect translation' do
       fill_in 'user_translation', with: 'RoR'
       click_button 'Проверить'
-      expect(page).
-          to have_content 'Вы ввели не верный перевод. Повторите попытку.'
+      expect(page)
+        .to have_content 'Вы ввели не верный перевод. Повторите попытку.'
     end
 
     it 'correct translation' do
@@ -94,8 +94,8 @@ describe 'review cards with one block' do
     it 'incorrect translation distance=2' do
       fill_in 'user_translation', with: 'hou'
       click_button 'Проверить'
-      expect(page).
-          to have_content 'Вы ввели не верный перевод. Повторите попытку.'
+      expect(page)
+        .to have_content 'Вы ввели не верный перевод. Повторите попытку.'
     end
 
     it 'correct translation distance=1' do
@@ -157,8 +157,8 @@ describe 'review cards with two blocks' do
     it 'incorrect translation' do
       fill_in 'user_translation', with: 'RoR'
       click_button 'Проверить'
-      expect(page).
-          to have_content 'Вы ввели не верный перевод. Повторите попытку.'
+      expect(page)
+        .to have_content 'Вы ввели не верный перевод. Повторите попытку.'
     end
 
     it 'correct translation' do
@@ -170,8 +170,8 @@ describe 'review cards with two blocks' do
     it 'incorrect translation distance=2' do
       fill_in 'user_translation', with: 'hou'
       click_button 'Проверить'
-      expect(page).
-          to have_content 'Вы ввели не верный перевод. Повторите попытку.'
+      expect(page)
+        .to have_content 'Вы ввели не верный перевод. Повторите попытку.'
     end
 
     it 'correct translation distance=1' do
@@ -193,8 +193,8 @@ describe 'review cards with two blocks' do
     it 'incorrect translation' do
       fill_in 'user_translation', with: 'RoR'
       click_button 'Проверить'
-      expect(page).
-          to have_content 'Вы ввели не верный перевод. Повторите попытку.'
+      expect(page)
+        .to have_content 'Вы ввели не верный перевод. Повторите попытку.'
     end
 
     it 'correct translation' do
@@ -206,8 +206,8 @@ describe 'review cards with two blocks' do
     it 'incorrect translation distance=2' do
       fill_in 'user_translation', with: 'hou'
       click_button 'Проверить'
-      expect(page).
-          to have_content 'Вы ввели не верный перевод. Повторите попытку.'
+      expect(page)
+        .to have_content 'Вы ввели не верный перевод. Повторите попытку.'
     end
 
     it 'correct translation distance=1' do
@@ -249,8 +249,8 @@ describe 'review cards with current_block' do
     it 'incorrect translation' do
       fill_in 'user_translation', with: 'RoR'
       click_button 'Проверить'
-      expect(page).
-          to have_content 'Вы ввели не верный перевод. Повторите попытку.'
+      expect(page)
+        .to have_content 'Вы ввели не верный перевод. Повторите попытку.'
     end
 
     it 'correct translation' do
@@ -262,8 +262,8 @@ describe 'review cards with current_block' do
     it 'incorrect translation distance=2' do
       fill_in 'user_translation', with: 'hou'
       click_button 'Проверить'
-      expect(page).
-          to have_content 'Вы ввели не верный перевод. Повторите попытку.'
+      expect(page)
+        .to have_content 'Вы ввели не верный перевод. Повторите попытку.'
     end
 
     it 'correct translation distance=1' do
@@ -287,8 +287,8 @@ describe 'review cards with current_block' do
     it 'incorrect translation' do
       fill_in 'user_translation', with: 'RoR'
       click_button 'Проверить'
-      expect(page).
-          to have_content 'Вы ввели не верный перевод. Повторите попытку.'
+      expect(page)
+        .to have_content 'Вы ввели не верный перевод. Повторите попытку.'
     end
 
     it 'correct translation' do
@@ -300,8 +300,8 @@ describe 'review cards with current_block' do
     it 'incorrect translation distance=2' do
       fill_in 'user_translation', with: 'hou'
       click_button 'Проверить'
-      expect(page).
-          to have_content 'Вы ввели не верный перевод. Повторите попытку.'
+      expect(page)
+        .to have_content 'Вы ввели не верный перевод. Повторите попытку.'
     end
 
     it 'correct translation distance=1' do
